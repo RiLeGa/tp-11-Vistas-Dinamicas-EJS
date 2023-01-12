@@ -55,13 +55,14 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
           <% for (let i = 0; i < menu.length; i++) {%>
+            <a href="/detalle/<%= menu[i].id %>">
              <h4><%=menu[i].titulo%></h4>
              <p class="ps-text-grey">
               <%=menu[i].descripcion%>  U$S <%=menu[i].precio.toFixed(2)%>
              </p>
              <br />
              <% }  %> 
-
+             </a>
         </div>
 
         <div class="ps-col l6 ps-padding-large ps-img-menu">
